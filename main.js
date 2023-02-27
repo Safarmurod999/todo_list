@@ -1,15 +1,15 @@
-let numInput = document.getElementById("numInput");
-let loginDiv = document.getElementById("modalLogin");
-let submit = document.getElementById("submit");
-let token=localStorage.getItem('password')?JSON.parse(localStorage.getItem('password')):"";
-numInput.value=token;
+// let numInput = document.getElementById("numInput");
+// let loginDiv = document.getElementById("modalLogin");
+// let submit = document.getElementById("submit");
+// let token=localStorage.getItem('password')?JSON.parse(localStorage.getItem('password')):"";
+// numInput.value=token;
 
-function closeModal() {
-    localStorage.setItem('password',numInput.value);
-    loginDiv.style.display = "none";
+// function closeModal() {
+//     localStorage.setItem('password',numInput.value);
+//     loginDiv.style.display = "none";
 
-}
-submit.addEventListener('click',closeModal);
+// }
+// submit.addEventListener('click',closeModal);
 
 const itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
